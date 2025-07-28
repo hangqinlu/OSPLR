@@ -130,6 +130,8 @@ python main.py
   title = { OSPLR: A Framework for Complex Entity Recognition and Automated Knowledge Graph Construction from Historical Chinese Texts },
   year = {2025},
   howpublished = {\url{https://github.com/HangqinLu/OSPLR}}
+  note = {GitHub repository (accessed July 2025)}
+
 }
 ```
 ## License
