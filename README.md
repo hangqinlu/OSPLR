@@ -15,10 +15,6 @@ To address these challenges, OSPLR introduces a **Single-Point and Length-Repres
 
 ## Features
 
-The construction of historical knowledge bases has undergone three main stages:
-
-## Features
-
 - Automatic recognition and extraction of polysemous, nested, and ambiguous entities from historical texts
 - Comprehensive ontology modeling for complex attributes and relations
 - Ontology-driven Chain-of-Thought (CoT) prompting for enhanced LLM inference and deep reasoning
