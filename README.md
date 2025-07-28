@@ -1,3 +1,4 @@
+![OSPLR Banner](image/img.png)
 # OSPLR: A Framework for Complex Entity Recognition and Automated Knowledge Graph Construction from Historical Chinese Texts
 ## Project Overview
 
