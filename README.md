@@ -1,4 +1,6 @@
-![OSPLR Banner](image/img.png)
+<p align="center">
+  <img src="image/img.png" alt="OSPLR Banner" width="800"/>
+</p>
 # OSPLR: A Framework for Complex Entity Recognition and Automated Knowledge Graph Construction from Historical Chinese Texts
 ## Project Overview
 
