@@ -203,8 +203,8 @@ def struct_f1_single(gold_nodes, gold_attrs, gold_rels, pred_nodes, pred_attrs, 
     return prf(tp, fp, fn)
 
 if __name__ == "__main__":
-    gold_path = r'C:\Users\卢航青\PycharmProjects\pythonProject11\SPLR实验数据\科举——组别1.json'
-    pred_path = r"C:\Users\卢航青\PycharmProjects\pythonProject11\SPLR实验数据\SPLR_繁体——临时扰动15.json"
+    gold_path = r'data/gold_data/group1.json'
+    pred_path = r"Experimental Results/osplr_pred/osplr_group1.json"
 
     with open(gold_path, 'r', encoding='utf-8') as f:
         gold = json.load(f)
