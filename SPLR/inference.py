@@ -1,13 +1,11 @@
 import torch
 from collections import  defaultdict
 def clean_entities(entity_list):
-    # 找所有被包含的实体
     contained = set()
     for i, e1 in enumerate(entity_list):
         for j, e2 in enumerate(entity_list):
             if i != j and e1 in e2:
                 contained.add(e1)
-    # 存在嵌套才清洗，否则返回原列表
     if contained:
         return sorted(contained, key=entity_list.index)
     else:
@@ -61,7 +59,7 @@ def get_entities(pred,offset_mapping,text,index_2_rel):
     class_dict = defaultdict(list)
     for text, tag, _ in entities:
         zh_tag = label_map.get(tag)
-        if zh_tag:  # 强制只输出定义过的类别
+        if zh_tag:  #
             class_dict[zh_tag].append(text)
         else:
             print(f'【WARNING】标签 {tag} 未定义映射，自动跳过！')
@@ -75,6 +73,5 @@ def ner_inference(text,tokenizer,device,model,index_2_type):
     offset_mapping = input_data['offset_mapping'].to(device)
     with torch.no_grad():
         encoded_text,pred =  model.forward(input_ids,attention_mask)
-        # 你要保证decode_entities存在且能用(pred,offset_mapping,text,index_2_rel)
         entities = get_entities(pred, offset_mapping,text, index_2_type)
     return entities
