@@ -1,5 +1,4 @@
 # prompt_templates.py
-# 放你的PROMPT_TEMPLATE大块文本，可用函数返回
 def build_prompt(text, ner_knowledge):
     return f"""
             请记住以下本体结构和示例格式，然后从给定的<文本>中提取对应信息（隐性属性如果推理不出则置为空），并将结果转换为图数据 JSONL 格式（按行输出，一行为一条数据）。
