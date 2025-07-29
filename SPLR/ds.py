@@ -6,7 +6,6 @@ import os
 
 def load_llm_config(path=None):
     if path is None:
-        # 当前脚本所在目录的父级作为根
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         config_path = os.path.join(base_dir, 'configs', 'config.yaml')
     else:
